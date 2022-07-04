@@ -1,0 +1,31 @@
+{
+  "name": "galaxy-conquest",
+  "version": "1.0.0",
+  "description": "A game of galactic conquest",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel watch src/game.ts",
+    "serve": "browser-sync start --server --files '.'",
+    "start": "concurrently --kill-others \"npm run build\" \"npm run serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evenflow58/galaxy-conquest.git"
+  },
+  "author": "Evan Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evenflow58/galaxy-conquest/issues"
+  },
+  "homepage": "https://github.com/evenflow58/galaxy-conquest#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.2.2",
+    "http-server": "^14.1.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
+}
